@@ -17,8 +17,9 @@ package com.example.android.flavor;
 
 
 import android.os.Bundle;
-import android.support.v7.app.AppCompatActivity;
 import android.widget.ListView;
+
+import androidx.appcompat.app.AppCompatActivity;
 
 import java.util.ArrayList;
 
@@ -52,7 +53,7 @@ public class MainActivity extends AppCompatActivity {
         AndroidFlavorAdapter flavorAdapter = new AndroidFlavorAdapter(this, androidFlavors);
 
         // Get a reference to the ListView, and attach the adapter to the listView.
-        ListView listView = (ListView) findViewById(R.id.listview_flavor);
+        ListView listView = findViewById(R.id.listview_flavor);
         listView.setAdapter(flavorAdapter);
     }
 }
